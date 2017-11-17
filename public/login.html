@@ -1,0 +1,27 @@
+
+    <main role="main" class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h1>Hi</h1>
+              <a class="btn btn-outline-primary" href="#/" ng-click="startButton()">Auth</a><br>
+              <div ng-bind-html="trustedHtml">{{content}}</div><br>
+              <input class="childtableinput" type="text" ng-model="newCode">
+              <a class="btn btn-outline-primary" href="#/" ng-click="getToken(newCode)">GetToken</a><br>
+              <input class="childtableinput" type="text" ng-model="oldToken">
+              <a class="btn btn-outline-primary" href="#/" ng-click="refreshToken(oldToken)">RefreshToken</a><br>
+              <input class="childtableinput" type="text" ng-model="newToken">
+              <a class="btn btn-outline-primary" href="#/" ng-click="getData(newToken)">Get Data</a>
+              
+              <h4>Hi</h4>
+          </div><!-- /.blog-post -->
+        </div><!-- /.blog-main -->
+
+        
+
+      </div><!-- /.row -->
+
+    </main><!-- /.container -->
